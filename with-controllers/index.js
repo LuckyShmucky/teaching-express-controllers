@@ -6,10 +6,10 @@ const app = express()
 // PORT constant
 const PORT = 3000
 
-const searchRoutes = require('./search')
-const authRoutes = require('./auth')
-const dashboardRoutes = require('./dashboard')
-const settingsRoutes = require('./settings')
+const searchRoutes = require('./controllers/search')
+const authRoutes = require('./controllers/auth')
+const dashboardRoutes = require('./controllers/dashboard')
+const settingsRoutes = require('./controllers/settings')
 
 // homepage routes
 app.get('/', function(request, response){
